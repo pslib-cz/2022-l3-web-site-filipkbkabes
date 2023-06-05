@@ -2,12 +2,33 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <title>Tento webový projekt</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <title>Sídlák Beer</title>
 </head>
 <body>
-    <h1>My Web Page</h1>    
+    <header class="header">
+        <nav class="nav header-item">
+            <a href="./index.html" class="nav-item">Sídlák Beer</a>
+          <ul class="navlist header-item">
+            <li class="navlist-item"><a href="./index.html">Home</a></li>
+            <li class="navlist-item"><a href="./second.html">Info</a></li>
+          </ul>  
+        </nav>
+    </header>
+    <main>
+       <div class="background">
+           <div class="texture">
+                <h1>Sídlák Beer</h1>
+                <a href="./second.html">Zjistit více</a>
+           </div>
+       </div>
+    </main>
+    <footer class="footer">
+        <p>Made in HMV</p>
+    </footer>
 </body>
 </html>

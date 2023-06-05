@@ -1,0 +1,28 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: #FFA800;
+    border-bottom: solid 1rem #278949;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.texture {
+    background-image: url(../resources/sidlakvektordonewithtext.png);
+}
+
+.footer {
+    
+    background-color: #FFA800;
+    border-top: solid 1rem #278949;    
+}
