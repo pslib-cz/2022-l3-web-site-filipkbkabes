@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "DonGraffiti";
+    src: url(../resources/DonGraffiti.otf);
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -17,12 +22,54 @@ html {
     margin-left: 30px;
 }
 
+.logo {
+    font-family: "DonGraffiti";
+    text-decoration: none;
+    color: #278949;
+    font-size: 30px;
+}
+
+.navlist {
+    display: inherit;
+}
+
+.navlist-item {
+    list-style-type: none;
+}
+
+.navlink {
+    text-decoration: none;
+    font-family: "DonGraffiti";
+    color: #278949;
+}
+
+.titlecontainer {
+    position: absolute;
+
+}
+
+.title {
+    font-family: "DonGraffiti";
+    font-size: 75px;
+    color: #278949;
+    -webkit-text-stroke: #FFA800 1px;
+}
+
+.background {
+    
+}
+
 .texture {
     background-image: url(../resources/sidlakvektordonewithtext.png);
+    min-height: 70vh;
 }
 
 .footer {
-    
     background-color: #FFA800;
-    border-top: solid 1rem #278949;    
+    border-top: solid 1rem #278949;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "DonGraffiti";
+    color: #278949;
 }
