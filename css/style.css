@@ -35,6 +35,8 @@ html {
 
 .navlist__item {
     list-style-type: none;
+    padding-left: 5px;
+    padding-right: 5px; 
 }
 
 .navlink {
@@ -44,7 +46,6 @@ html {
 }
 
 .titlecontainer {
-    position: absolute;
 
 }
 
@@ -53,11 +54,22 @@ html {
     font-size: 75px;
     color: #278949;
     -webkit-text-stroke: #FFA800 1px;
+    margin-top: 0px;
 }
 
 .button {
     background-color: #278949;
     border-color: #FFA800;
+    text-decoration: none;
+    color: #FFA800;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25%;
+    border: 5px;
+    border-style: solid;
+    font-family: "DonGraffiti";
 }
 
 .background {
