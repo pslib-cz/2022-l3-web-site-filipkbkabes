@@ -46,8 +46,21 @@ html {
 }
 
 .titlecontainer {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
+.titlecontainer__item {
+    align-self: center;
+    
 }
+
 
 .title {
     font-family: "DonGraffiti";
@@ -55,6 +68,7 @@ html {
     color: #278949;
     -webkit-text-stroke: #FFA800 1px;
     margin-top: 0px;
+    text-align: center;
 }
 
 .button {
@@ -70,6 +84,7 @@ html {
     border: 5px;
     border-style: solid;
     font-family: "DonGraffiti";
+    align-self: center;
 }
 
 .background {
