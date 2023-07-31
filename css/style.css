@@ -3,6 +3,11 @@
     src: url(../resources/DonGraffiti.otf);
 }
 
+@font-face {
+    font-family: "BlankRiver";
+    src: url(../resources/Blank\ River.ttf);
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -31,6 +36,10 @@ html {
 
 .navlist {
     display: inherit;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    padding-right: 50px;
 }
 
 .navlist__item {
@@ -43,6 +52,10 @@ html {
     text-decoration: none;
     font-family: "DonGraffiti";
     color: #278949;
+}
+
+.navlink:hover {
+    text-decoration: underline #278949;
 }
 
 .titlecontainer {
@@ -87,6 +100,12 @@ html {
     align-self: center;
 }
 
+.button:hover {
+    background-color: #FFA800;
+    border-color: #278949;
+    color: #278949;
+}
+
 .background {
     
 }
@@ -94,6 +113,7 @@ html {
 .texture {
     background-image: url(../resources/sidlakvektordonewithtext.png);
     min-height: 85vh;
+    overflow: hidden;
 }
 
 .footer {
@@ -104,4 +124,38 @@ html {
     width: 100%;
     font-family: "DonGraffiti";
     color: #278949;
+    text-align: center;
+}
+
+.textbox {
+    background-color: rgba(96, 96, 96, 0.5);
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    border-radius: 5%;
+}
+
+.textbox__item {
+    margin-top: 0;
+    
+}
+
+.textbox__item--font {
+    font-family: "BlankRiver";
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery__item {
+    display: block;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(96, 96, 96, 0.5);
+}
+
+.gallery__item > img {
+    width: 100%;
 }
