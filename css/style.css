@@ -147,15 +147,16 @@ html {
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 5px;
 }
 
 .gallery__item {
     display: block;
-    width: 100%;
-    margin: 0;
     background-color: rgba(96, 96, 96, 0.5);
+    margin: 15px;
 }
 
 .gallery__item > img {
     width: 100%;
+    object-fit: cover;
 }
