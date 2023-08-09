@@ -8,6 +8,22 @@
     src: url(../resources/Blank\ River.ttf);
 }
 
+@media screen and (min-width: 768px) {
+    .background {
+        background-image: url(../resources/background.jpg);
+        background-size: cover;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+    .texture {
+        width: 768px;
+        margin: auto;
+        border-left: solid 1rem #FFA800;
+        border-right: solid 1rem #FFA800;
+    }
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -59,14 +75,9 @@ html {
 }
 
 .titlecontainer {
-    margin: auto;
-    width: 50%;
+    margin-top: 170px;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 
 .titlecontainer__item {
@@ -106,10 +117,6 @@ html {
     color: #278949;
 }
 
-.background {
-    
-}
-
 .texture {
     background-image: url(../resources/sidlakvektordonewithtext.png);
     min-height: 85vh;
@@ -119,12 +126,15 @@ html {
 .footer {
     background-color: #FFA800;
     border-top: solid 1rem #278949;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     font-family: "DonGraffiti";
     color: #278949;
     text-align: center;
+}
+
+.footer__item {
+    margin-bottom: 0;
+    padding-bottom: 15px;
 }
 
 .textbox {
@@ -154,9 +164,12 @@ html {
     display: block;
     background-color: rgba(96, 96, 96, 0.5);
     margin: 15px;
+    padding: 10px;
+    border-radius: 5%;
 }
 
 .gallery__item > img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
