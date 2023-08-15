@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lightGallery-master/dist/css/lightgallery.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -26,24 +27,24 @@
                     <h2 class="textbox__item textbox__item--font">Sídlák Beer - Pravé pivo ze sídliště</h2>
                     <p class="textbox__item">Už jste někdy měli pivo ze sídliště? Ne? Tak tohle je něco pro vás! Naše (čtěte moje) pivo je připraveno, uvařeno, zkvašeno a zabaleno v autentickém sídelním celku s velkokapacitními domy. V nabídce se pouze nachází první várka typu Pils.</p>
                 </div>
-                <div class="gallery">
-                    <figure class="gallery__item">
-                        <img src="./img/highesstir.jpg" alt="Míchání piva">
+                <div id="lgallery" class="gallery">
+                    <figure class="gallery__item" data-src="./img/highesstir.jpg">
+                        <a href="./img/highesstir.jpg"><img src="./img/highesstir.jpg" alt="Míchání piva"></a>
                     </figure>
-                    <figure class="gallery__item">
-                        <img src="./img/low_res_stir_3-transformed.jpeg" alt="Přidávaní kvasnic">
+                    <figure class="gallery__item" data-src="./img/low_res_stir_3-transformed.jpeg">
+                        <a href="./img/low_res_stir_3-transformed.jpeg"><img src="./img/low_res_stir_3-transformed.jpeg" alt="Přidávaní kvasnic"></a>
                     </figure>
-                    <figure class="gallery__item">
-                        <img src="./img/etiketa.png" alt="Etiketa">
+                    <figure class="gallery__item" data-src="./img/etiketa.png">
+                        <a href="./img/etiketa.png"><img src="./img/etiketa.png" alt="Etiketa"></a>
                     </figure>
-                    <figure class="gallery__item">
-                        <img src="./img/highrespour.jpg" alt="Extrakt">
+                    <figure class="gallery__item" data-src="./img/highrespour.jpg">
+                        <a href="./img/highrespour.jpg"><img src="./img/highrespour.jpg" alt="Extrakt"></a>
                     </figure>
-                    <figure class="gallery__item">
-                        <img src="./img/low_res_kvas_2-transformed.png" alt="Kvašení piva">
+                    <figure class="gallery__item" data-src="./img/low_res_kvas_2-transformed.png">
+                        <a href="./img/low_res_kvas_2-transformed.png"><img src="./img/low_res_kvas_2-transformed.png" alt="Kvašení piva"></a>
                     </figure>
-                    <figure class="gallery__item">
-                        <img src="./img/pivson2.png" alt="Láhev piva">
+                    <figure class="gallery__item" data-src="./img/pivson2.png">
+                        <a href="./img/pivson2.png"><img src="./img/pivson2.png" alt="Láhev piva"></a>
                     </figure>
                 </div>
             </div>
@@ -52,5 +53,14 @@
     <footer class="footer">
         <p class="footer__item">Made in HMV</p>
     </footer>
+    
 </body>
+<script src="./lightGallery-master/dist/lightgallery.min.js"></script>
+<script src="./lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="./lightGallery-master/dist/plugins/fullscreen/lg-fullscreen.min.js"></script>
+<script>
+    lightGallery(document.getElementById('lgallery'), {
+    selector: '.gallery__item',
+});
+</script>
 </html>
