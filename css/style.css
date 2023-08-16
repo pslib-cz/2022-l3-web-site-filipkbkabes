@@ -24,6 +24,12 @@
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .texture {
+        width: 1200px;
+    }
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
 }
