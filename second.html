@@ -56,11 +56,10 @@
     <script src="./lightGallery-master/dist/lightgallery.min.js"></script>
     <script src="./lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script src="./lightGallery-master/dist/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('lgallery'), {
+            selector: '.gallery__item',
+    });
+    </script>
 </body>
-
-<script>
-    lightGallery(document.getElementById('lgallery'), {
-        selector: '.gallery__item',
-});
-</script>
 </html>
